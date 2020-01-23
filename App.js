@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.page}>
-      <Text style={styles.text}>[INSERT CAT PICTURES]</Text>
+      <Text style={styles.text}>[TODO: INSERT CAT]</Text>
     </View>
   );
 }
@@ -17,6 +17,6 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
-    fontSize: 22
+    fontSize: 42
   }
 });
