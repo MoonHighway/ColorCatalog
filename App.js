@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.page}>
-      <Text style={styles.text}>[TODO: INSERT PICTURES]</Text>
+      <Text style={styles.text}>[TODO: INSERT CAT]</Text>
     </View>
   );
 }
