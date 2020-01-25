@@ -5,42 +5,54 @@
   },
   {
     "id": 1,
-    "color": "red"
+    "color": "green"
   },
   {
     "id": 2,
-    "color": "red"
+    "color": "blue"
   },
   {
     "id": 3,
-    "color": "red"
+    "color": "orange"
   },
   {
     "id": 4,
-    "color": "red"
+    "color": "yellow"
   },
   {
     "id": 5,
-    "color": "red"
+    "color": "pink"
   },
   {
     "id": 6,
-    "color": "red"
+    "color": "black"
   },
   {
     "id": 7,
-    "color": "red"
+    "color": "white"
   },
   {
     "id": 8,
-    "color": "red"
+    "color": "grey"
   },
   {
     "id": 9,
-    "color": "red"
+    "color": "goldenrod"
   },
   {
     "id": 10,
-    "color": "red"
+    "color": "darkblue"
+  },
+  {
+    "id": 11,
+    "color": "darkred"
+  },
+  {
+    "id": 12,
+    "color": "lightblue"
+  },
+  {
+    "id": 13,
+    "color": "lightred"
   }
 ]
