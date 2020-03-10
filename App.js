@@ -33,6 +33,7 @@ export default function App() {
   if (!pet) return <ActivityIndicator size="large" />;
 
   return (
+<<<<<<< HEAD
     <SafeAreaView style={styles.container}>
       <ScrollView
         refreshControl={
@@ -48,6 +49,14 @@ export default function App() {
         </Text>
       </ScrollView>
     </SafeAreaView>
+=======
+    <NavigationContainer>
+      <Navigator>
+        <Screen name="Home" component={ColorList} />
+        <Screen name="Details" component={ColorDetails} />
+      </Navigator>
+    </NavigationContainer>
+>>>>>>> parent of fc10067... Color Details Complete
   );
 }
 
