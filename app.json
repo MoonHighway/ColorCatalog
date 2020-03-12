@@ -19,7 +19,11 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.moonhighway.color-catalog"
+    },
+    "android": {
+      "package": "com.moonhighway.colorcatalog"
     }
   }
 }
