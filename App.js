@@ -5,17 +5,21 @@ import Settings from "./components/Settings";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-
 import { ColorProvider } from "./hooks";
+import { Feather } from "@expo/vector-icons";
 
 const { Navigator, Screen } = createStackNavigator();
 const Drawer = createDrawerNavigator();
+
+const SettingsButton = () => (
+  <Feather name="settings" size={32} color="black" />
+);
 
 const MainScreens = () => (
   <Navigator>
     <Screen
       name="Home"
-      options={{ title: "Color List" }}
+      options={{ title: "Color List", headerLeft: SettingsButton }}
       component={ColorList}
     />
     <Screen name="Details" component={ColorDetails} />
