@@ -20,7 +20,8 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.moonhighway.color-catalog"
+      "bundleIdentifier": "com.moonhighway.color-catalog",
+      "buildNumber": "0.1.0"
     },
     "android": {
       "package": "com.moonhighway.colorcatalog"
