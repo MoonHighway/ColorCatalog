@@ -1,10 +1,10 @@
 import React from "react";
 import ColorList from "./components/ColorList";
 import ColorDetails from "./components/ColorDetails";
-import Settings from "./components/Settings";
+import Info from "./components/Info";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Feather } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -17,19 +17,23 @@ export default function App() {
           options={({ navigation }) => ({
             title: "Color List",
             headerLeft: () => (
-              <Feather
-                name="settings"
-                style={{ padding: 3 }}
+              <Entypo
+                name="info-with-circle"
+                style={{ padding: 3, paddingLeft: 8 }}
                 size={38}
                 color="black"
-                onPress={() => navigation.navigate("Settings")}
+                onPress={() => navigation.navigate("Info")}
               />
             )
           })}
           component={ColorList}
         />
         <Screen name="Details" component={ColorDetails} />
-        <Screen name="Settings" component={Settings} />
+        <Screen
+          name="Info"
+          component={Info}
+          options={{ gestureDirection: "horizontal-inverted" }}
+        />
       </Navigator>
     </NavigationContainer>
   );
