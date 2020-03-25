@@ -28,5 +28,8 @@ export const useColors = () => {
     const newColor = { id: generate(), color };
     setColors([newColor, ...colors]);
   };
-  return { colors, addColor };
+
+  const removeColor = id => setColors(colors.filter(c => c.id !== id));
+
+  return { colors, addColor, removeColor };
 };
