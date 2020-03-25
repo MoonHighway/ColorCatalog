@@ -8,7 +8,7 @@ export default function Info() {
     <View style={styles.container}>
       <Image style={styles.pic} source={MoonHighwayLogo} />
       <Image style={styles.icon} source={Logo} />
-      <Text style={styles.header}>Color Organiser</Text>
+      <Text style={styles.header}>Color Catalog</Text>
       <Text style={styles.text}>
         The Color Organizer is the product of Moon Highway's Learning React
         Native Course. This course is available on LinkedIn Learning.
