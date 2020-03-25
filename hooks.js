@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { generate } from "shortid";
-import { AsyncStorage } from "react-native";
+import { AsyncStorage, Alert } from "react-native";
+import Color from "color";
 
 export const useColors = () => {
   const [colors, setColors] = useState([]);
@@ -25,8 +26,13 @@ export const useColors = () => {
   }, [colors]);
 
   const addColor = color => {
-    const newColor = { id: generate(), color };
-    setColors([newColor, ...colors]);
+    try {
+      Color(color);
+      const newColor = { id: generate(), color };
+      setColors([newColor, ...colors]);
+    } catch (error) {
+      Alert.alert(`${color} is an invalid color.`);
+    }
   };
 
   const removeColor = id => setColors(colors.filter(c => c.id !== id));
